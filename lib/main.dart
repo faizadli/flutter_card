@@ -49,12 +49,13 @@ class Card extends StatelessWidget {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.white,
-                          child: const Icon(
-                            Icons.person,
-                            color: Colors.black,
+                        Container(
+                          padding: const EdgeInsets.all(15),
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.white
                           ),
+                          child: const Icon(Icons.account_circle),
                         ),
                         const SizedBox(
                           width: 12.0,
